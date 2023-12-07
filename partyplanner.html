@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./partyplanner.css">
+  <title>Party Planner</title>
+</head>
+<body>
+  <section id="table-container">
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date/Time</th>
+          <th>Location</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="data-output">
+        <!--Data from API-->
+      </tbody>
+    </table>
+  </section>
+  <section id="party-container">
+    <h1>Event Information</h1>
+    <table id="parties"></table>
+  </section>
+  <section id="form-container">
+    <form id="form">
+      <label for="name">Name</label><br>
+      <input class="name" type="text" name="name"><br>
+      <label for="date">Date/Time</label><br>
+      <input class="date" type="text" name="time"><br>
+      <label for="description">Description</label><br>
+      <input class="description" type="text" name="description"><br>
+      <label for="location">Location</label><br>
+      <input class="location" type="text" name="location"><br>
+      <input class="submitbtn" type="submit" value="Submit">
+
+  
+    </form>
+  </section>
+
+
+  
+<script src="./partyplanner.js"></script>
+</body>
+</html>
+
+<!-- https://fsa-crud-2aa9294fe819.herokuapp.com/api/2310-fsa-et-web-pt-sf-b-alex/events -->
